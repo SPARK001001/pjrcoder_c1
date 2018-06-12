@@ -1,0 +1,21 @@
+<html>
+<head>
+<link ref="stylesheet" type="text/css" href="../static/c2.css"/>
+</head>
+    <body>
+        <h>head</h>
+        <br/>
+        profile : {{uid}}<br>
+        {% for i in range(0,5): %}
+            profile: i <br>
+        {% endfor %}
+
+        {% for color in colors: %}
+        {{ loop.index }} {{ color }} <br>
+        {% endfor %}
+
+        {% for k,v in infos.items(): %}
+        {{k}}, {{v}} <br>
+        {% endfor %}
+    </body>
+</html>
